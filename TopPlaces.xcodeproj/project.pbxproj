@@ -27,6 +27,8 @@
 		5C72C119194A51D7004EA8B2 /* globeicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C72C118194A51D7004EA8B2 /* globeicon.png */; };
 		5C72C11F194B42FB004EA8B2 /* PlacesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C72C11E194B42FB004EA8B2 /* PlacesTableViewController.m */; };
 		5C72C123194B4EEA004EA8B2 /* TopPlacesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C72C122194B4EEA004EA8B2 /* TopPlacesTableViewController.m */; };
+		5C72C126194B565A004EA8B2 /* PhotosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C72C125194B565A004EA8B2 /* PhotosTableViewController.m */; };
+		5C72C12B194B7435004EA8B2 /* PhotosPlacesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C72C12A194B7435004EA8B2 /* PhotosPlacesTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,10 @@
 		5C72C11E194B42FB004EA8B2 /* PlacesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlacesTableViewController.m; path = ../PlacesTableViewController.m; sourceTree = "<group>"; };
 		5C72C121194B4EEA004EA8B2 /* TopPlacesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopPlacesTableViewController.h; sourceTree = "<group>"; };
 		5C72C122194B4EEA004EA8B2 /* TopPlacesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopPlacesTableViewController.m; sourceTree = "<group>"; };
+		5C72C124194B565A004EA8B2 /* PhotosTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosTableViewController.h; sourceTree = "<group>"; };
+		5C72C125194B565A004EA8B2 /* PhotosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosTableViewController.m; sourceTree = "<group>"; };
+		5C72C129194B7435004EA8B2 /* PhotosPlacesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosPlacesTableViewController.h; sourceTree = "<group>"; };
+		5C72C12A194B7435004EA8B2 /* PhotosPlacesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosPlacesTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,14 +200,34 @@
 		5C72C120194B435C004EA8B2 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5C72C128194B739E004EA8B2 /* PhotosTVC */,
+				5C72C127194B736D004EA8B2 /* PlacesTVC */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		5C72C127194B736D004EA8B2 /* PlacesTVC */ = {
+			isa = PBXGroup;
+			children = (
+				5C72C121194B4EEA004EA8B2 /* TopPlacesTableViewController.h */,
+				5C72C122194B4EEA004EA8B2 /* TopPlacesTableViewController.m */,
 				5C72C11D194B42FB004EA8B2 /* PlacesTableViewController.h */,
 				5C72C11E194B42FB004EA8B2 /* PlacesTableViewController.m */,
 				5C72C0EF194A2496004EA8B2 /* ViewController.h */,
 				5C72C0F0194A2496004EA8B2 /* ViewController.m */,
-				5C72C121194B4EEA004EA8B2 /* TopPlacesTableViewController.h */,
-				5C72C122194B4EEA004EA8B2 /* TopPlacesTableViewController.m */,
 			);
-			name = "View Controllers";
+			name = PlacesTVC;
+			sourceTree = "<group>";
+		};
+		5C72C128194B739E004EA8B2 /* PhotosTVC */ = {
+			isa = PBXGroup;
+			children = (
+				5C72C124194B565A004EA8B2 /* PhotosTableViewController.h */,
+				5C72C125194B565A004EA8B2 /* PhotosTableViewController.m */,
+				5C72C129194B7435004EA8B2 /* PhotosPlacesTableViewController.h */,
+				5C72C12A194B7435004EA8B2 /* PhotosPlacesTableViewController.m */,
+			);
+			name = PhotosTVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +331,8 @@
 			files = (
 				5C72C0F1194A2496004EA8B2 /* ViewController.m in Sources */,
 				5C72C11F194B42FB004EA8B2 /* PlacesTableViewController.m in Sources */,
+				5C72C12B194B7435004EA8B2 /* PhotosPlacesTableViewController.m in Sources */,
+				5C72C126194B565A004EA8B2 /* PhotosTableViewController.m in Sources */,
 				5C72C0E8194A2496004EA8B2 /* AppDelegate.m in Sources */,
 				5C72C113194A2CCF004EA8B2 /* FlickrFetcher.m in Sources */,
 				5C72C0E4194A2496004EA8B2 /* main.m in Sources */,

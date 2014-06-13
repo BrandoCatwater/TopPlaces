@@ -19,5 +19,6 @@
 
 
 
-+ (void)loadTopPlacesOnCompletion:(void (^)(NSArray *photos, NSError *error))completionHandler;
++ (void)loadTopPlacesOnCompletion:(void (^)(NSArray *places, NSError *error))completionHandler;
++ (void)loadPhotosInPlace:(NSDictionary *)place maxResults:(NSUInteger)results onCompletion:(void (^)(NSArray *photos, NSError *error))completionHandler;
 @end

@@ -10,7 +10,7 @@
 
 @implementation FlickrTopPlacesHelper
 
-+ (void)loadTopPlacesOnCompletion:(void (^)(NSArray *photos, NSError *error))completionHandler
++ (void)loadTopPlacesOnCompletion:(void (^)(NSArray *places, NSError *error))completionHandler
 {
     NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration ephemeralSessionConfiguration]];
     NSURLSessionDownloadTask *task = [session downloadTaskWithURL:[FlickrTopPlacesHelper URLforTopPlaces]
@@ -23,6 +23,21 @@
                                                       completionHandler(places,error);
                                                   });
                                               }];
+    [task resume];
+}
+
++ (void)loadPhotosInPlace:(NSDictionary *)place maxResults:(NSUInteger)results onCompletion:(void (^)(NSArray *photos, NSError *error))completionHandler
+{
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration ephemeralSessionConfiguration]];
+    NSURLSessionDownloadTask *task = [session downloadTaskWithURL:[FlickrTopPlacesHelper URLforPhotosInPlace:[place valueForKeyPath:FLICKR_PLACE_ID] maxResults:results] completionHandler:^(NSURL *location, NSURLResponse *response, NSError *error) {
+        NSArray *photos;
+        if (!error){
+            photos = [[NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfURL:location] options:0 error:&error]valueForKeyPath:FLICKR_RESULTS_PHOTOS];
+        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            completionHandler(photos, error);
+        });
+    }];
     [task resume];
 }
 

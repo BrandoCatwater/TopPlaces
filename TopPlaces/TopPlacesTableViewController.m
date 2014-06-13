@@ -15,31 +15,19 @@
 
 @implementation TopPlacesTableViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 - (IBAction)fetchPlaces
 {
     [self.refreshControl beginRefreshing];
     [self.tableView setContentOffset:CGPointMake(0, -self.refreshControl.frame.size.height) animated:YES];
+    
     [FlickrTopPlacesHelper loadTopPlacesOnCompletion:^(NSArray *places, NSError *error) {
-        if (!error){
+        if (!error) {
             self.places = places;
             [self.refreshControl endRefreshing];
-        }else {
-            NSLog(@"Error Loading TopPlaces %@", error);
+        } else {
+            NSLog(@"Error loading TopPlaces: %@", error);
         }
     }];
 }
