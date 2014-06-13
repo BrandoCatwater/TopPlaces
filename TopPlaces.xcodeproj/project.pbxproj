@@ -25,6 +25,8 @@
 		5C72C113194A2CCF004EA8B2 /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C72C112194A2CCF004EA8B2 /* FlickrFetcher.m */; };
 		5C72C116194A2F85004EA8B2 /* FlickrTopPlacesHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C72C115194A2F85004EA8B2 /* FlickrTopPlacesHelper.m */; };
 		5C72C119194A51D7004EA8B2 /* globeicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C72C118194A51D7004EA8B2 /* globeicon.png */; };
+		5C72C11F194B42FB004EA8B2 /* PlacesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C72C11E194B42FB004EA8B2 /* PlacesTableViewController.m */; };
+		5C72C123194B4EEA004EA8B2 /* TopPlacesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C72C122194B4EEA004EA8B2 /* TopPlacesTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,10 @@
 		5C72C114194A2F85004EA8B2 /* FlickrTopPlacesHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlickrTopPlacesHelper.h; path = ../FlickrTopPlacesHelper.h; sourceTree = "<group>"; };
 		5C72C115194A2F85004EA8B2 /* FlickrTopPlacesHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlickrTopPlacesHelper.m; path = ../FlickrTopPlacesHelper.m; sourceTree = "<group>"; };
 		5C72C118194A51D7004EA8B2 /* globeicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = globeicon.png; sourceTree = SOURCE_ROOT; };
+		5C72C11D194B42FB004EA8B2 /* PlacesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlacesTableViewController.h; path = ../PlacesTableViewController.h; sourceTree = "<group>"; };
+		5C72C11E194B42FB004EA8B2 /* PlacesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlacesTableViewController.m; path = ../PlacesTableViewController.m; sourceTree = "<group>"; };
+		5C72C121194B4EEA004EA8B2 /* TopPlacesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopPlacesTableViewController.h; sourceTree = "<group>"; };
+		5C72C122194B4EEA004EA8B2 /* TopPlacesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopPlacesTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,8 +133,7 @@
 				5C72C115194A2F85004EA8B2 /* FlickrTopPlacesHelper.m */,
 				5C72C0E9194A2496004EA8B2 /* Main_iPhone.storyboard */,
 				5C72C0EC194A2496004EA8B2 /* Main_iPad.storyboard */,
-				5C72C0EF194A2496004EA8B2 /* ViewController.h */,
-				5C72C0F0194A2496004EA8B2 /* ViewController.m */,
+				5C72C120194B435C004EA8B2 /* View Controllers */,
 				5C72C117194A51C8004EA8B2 /* Images */,
 				5C72C10F194A2CCF004EA8B2 /* Flickr Fetcher */,
 				5C72C0F2194A2496004EA8B2 /* Images.xcassets */,
@@ -184,6 +189,19 @@
 				5C72C118194A51D7004EA8B2 /* globeicon.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		5C72C120194B435C004EA8B2 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5C72C11D194B42FB004EA8B2 /* PlacesTableViewController.h */,
+				5C72C11E194B42FB004EA8B2 /* PlacesTableViewController.m */,
+				5C72C0EF194A2496004EA8B2 /* ViewController.h */,
+				5C72C0F0194A2496004EA8B2 /* ViewController.m */,
+				5C72C121194B4EEA004EA8B2 /* TopPlacesTableViewController.h */,
+				5C72C122194B4EEA004EA8B2 /* TopPlacesTableViewController.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,10 +304,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C72C0F1194A2496004EA8B2 /* ViewController.m in Sources */,
+				5C72C11F194B42FB004EA8B2 /* PlacesTableViewController.m in Sources */,
 				5C72C0E8194A2496004EA8B2 /* AppDelegate.m in Sources */,
 				5C72C113194A2CCF004EA8B2 /* FlickrFetcher.m in Sources */,
 				5C72C0E4194A2496004EA8B2 /* main.m in Sources */,
 				5C72C116194A2F85004EA8B2 /* FlickrTopPlacesHelper.m in Sources */,
+				5C72C123194B4EEA004EA8B2 /* TopPlacesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
