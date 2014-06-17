@@ -8,6 +8,7 @@
 
 #import "PhotosTableViewController.h"
 #import "FlickrTopPlacesHelper.h"
+#import "ImageViewController.h"
 
 @interface PhotosTableViewController ()
 
@@ -42,4 +43,20 @@
     
     return cell;
 }
+
+- (void)prepareImageVC:(ImageViewController *)vc forPhoto: (NSDictionary *)photo
+{
+    vc.imageURL = [FlickrTopPlacesHelper URLforPhoto:photo format:FlickrPhotoFormatLarge];
+    vc.title = [FlickrTopPlacesHelper titleOfPhoto:photo];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+    if ([segue.identifier isEqualToString:@"Show Image"] && indexPath) {
+        [self prepareImageVC:segue.destinationViewController forPhoto:self.photos[indexPath.row]];
+    }
+}
+
+
 @end
