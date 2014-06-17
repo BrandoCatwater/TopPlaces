@@ -11,7 +11,7 @@
 #import "PhotosPlacesTableViewController.h"
 
 @interface PlacesTableViewController ()
-@property  (nonatomic, strong) NSDictionary *placesByCountry;
+@property (nonatomic, strong) NSDictionary *placesByCountry;
 @property (nonatomic, strong) NSArray *countries;
 
 
@@ -75,11 +75,10 @@ titleForHeaderInSection:(NSInteger)section
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
-    if ([segue.identifier isEqualToString:@"Show Place"] && indexPath) {
+    if ([segue.identifier isEqualToString:@"Show Photo"] && indexPath) {
         [self preparePhotosTVC:segue.destinationViewController
                       forPlace:self.placesByCountry[self.countries[indexPath.section]][indexPath.row]];
     }
 }
-
 
 @end

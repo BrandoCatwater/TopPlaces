@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface PhotosTableViewController : UITableViewController
-@property (nonatomic, strong) NSArray *photos;
+@property (nonatomic, strong) NSArray *photos; 
 
 @end

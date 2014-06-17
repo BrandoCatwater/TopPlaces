@@ -18,6 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	
     [FlickrTopPlacesHelper loadTopPlacesOnCompletion:^(NSArray *photos, NSError *error) {
         NSLog(@"photos: %@\nerror: %@", photos, error);
     }];
