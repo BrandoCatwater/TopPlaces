@@ -25,5 +25,7 @@
 
 + (NSString *)titleOfPhoto:(NSDictionary *)photo;
 + (NSString *)subtitleOfPhoto:(NSDictionary *)photo;
-
++ (NSString *)IDforPhoto:(NSDictionary *)photo;
++ (NSArray *)allPhtos;
++ (void)addPhoto:(NSDictionary *)photo;
 @end

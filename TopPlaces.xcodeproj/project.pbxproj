@@ -30,6 +30,7 @@
 		5C72C126194B565A004EA8B2 /* PhotosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C72C125194B565A004EA8B2 /* PhotosTableViewController.m */; };
 		5C72C12B194B7435004EA8B2 /* PhotosPlacesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C72C12A194B7435004EA8B2 /* PhotosPlacesTableViewController.m */; };
 		5C72C12F1950B4B4004EA8B2 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C72C12E1950B4B4004EA8B2 /* ImageViewController.m */; };
+		5CC1AACF1957B6740016655D /* RecentPhotosTVCV.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC1AACE1957B6740016655D /* RecentPhotosTVCV.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,8 @@
 		5C72C12A194B7435004EA8B2 /* PhotosPlacesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosPlacesTableViewController.m; sourceTree = "<group>"; };
 		5C72C12D1950B4B4004EA8B2 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
 		5C72C12E1950B4B4004EA8B2 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		5CC1AACD1957B6740016655D /* RecentPhotosTVCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentPhotosTVCV.h; sourceTree = "<group>"; };
+		5CC1AACE1957B6740016655D /* RecentPhotosTVCV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentPhotosTVCV.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +206,7 @@
 		5C72C120194B435C004EA8B2 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5CC1AAC91957B4130016655D /* RecentPhotosTVC */,
 				5C72C12C1950B482004EA8B2 /* ImageVC */,
 				5C72C128194B739E004EA8B2 /* PhotosTVC */,
 				5C72C127194B736D004EA8B2 /* PlacesTVC */,
@@ -241,6 +245,15 @@
 				5C72C12E1950B4B4004EA8B2 /* ImageViewController.m */,
 			);
 			name = ImageVC;
+			sourceTree = "<group>";
+		};
+		5CC1AAC91957B4130016655D /* RecentPhotosTVC */ = {
+			isa = PBXGroup;
+			children = (
+				5CC1AACD1957B6740016655D /* RecentPhotosTVCV.h */,
+				5CC1AACE1957B6740016655D /* RecentPhotosTVCV.m */,
+			);
+			name = RecentPhotosTVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C72C12F1950B4B4004EA8B2 /* ImageViewController.m in Sources */,
+				5CC1AACF1957B6740016655D /* RecentPhotosTVCV.m in Sources */,
 				5C72C0F1194A2496004EA8B2 /* ViewController.m in Sources */,
 				5C72C11F194B42FB004EA8B2 /* PlacesTableViewController.m in Sources */,
 				5C72C12B194B7435004EA8B2 /* PhotosPlacesTableViewController.m in Sources */,

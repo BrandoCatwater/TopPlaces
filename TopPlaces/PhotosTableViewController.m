@@ -48,6 +48,7 @@
 {
     vc.imageURL = [FlickrTopPlacesHelper URLforPhoto:photo format:FlickrPhotoFormatLarge];
     vc.title = [FlickrTopPlacesHelper titleOfPhoto:photo];
+    [FlickrTopPlacesHelper addPhoto:photo];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
